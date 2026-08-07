@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-page-from: #f9fafb;
+  --color-page-to: #d2d6db;
+
+  --background-image-page: linear-gradient(
+    to right,
+    var(--color-page-from),
+    var(--color-page-to)
+  );
+}
