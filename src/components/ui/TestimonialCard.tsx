@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Card from "./Card";
 
 export type TestimonialCardProps = {
   id: number;
@@ -16,7 +17,7 @@ export default function TestimonialCard({
   quote
 }: TestimonialCardProps) {
   return (
-    <div className="w-85 rounded-lg bg-white p-6 shadow-md">
+    <Card>
       <div className="flex flex-col gap-4">
         <div className="flex items-center gap-4">
           <Image
@@ -27,16 +28,16 @@ export default function TestimonialCard({
             className="rounded-full"
           />
           <div>
-            <h2 className="text-lg font-semibold">{name}</h2>
-            <span className="text-sm text-neutral-600">{handle}</span>
+            <h2 className="text-lg font-semibold text-foreground">{name}</h2>
+            <span className="text-sm text-foreground-muted">{handle}</span>
           </div>
         </div>
         <blockquote>
-          <p className="text-base text-neutral-600">
+          <p className="text-base text-foreground-muted">
             {quote}
           </p>
         </blockquote>
       </div>
-    </div>
+    </Card>
   )
 }

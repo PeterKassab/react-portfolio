@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+  /* Background color*/
   --color-page-from: #f9fafb;
   --color-page-to: #d2d6db;
 
@@ -9,4 +10,8 @@
     var(--color-page-from),
     var(--color-page-to)
   );
+
+  /* Text foreground */
+  --color-foreground: var(--color-neutral-900);
+  --color-foreground-muted: var(--color-neutral-600);
 }
